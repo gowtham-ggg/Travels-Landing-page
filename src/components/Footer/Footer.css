@@ -222,9 +222,7 @@
         margin-bottom: 20px;
         text-align: center; /* Center text */
     }
-    .map{
-        margin-top: 20px;
-    }
+    
     .contact-info-item a {
         width: 100%; /* Make the button full width on mobile */
         margin-top: 20px; /* Adjust space between buttons */

@@ -35,7 +35,7 @@ const Footer = () => {
               <div className="contact-info-item">
                 <h6>Address:</h6>
                 <p><i className="fa fa-map"></i>Nehru Nagar, Ramanathapuram</p>
-                <p className='map'><a href="https://maps.app.goo.gl/VbgU2zK1K5MJrjHV8" target="_blank" rel="noopener noreferrer" >Get Directions</a></p>
+                <p style={{paddingTop : '20px'}}><a href="https://maps.app.goo.gl/VbgU2zK1K5MJrjHV8" target="_blank" rel="noopener noreferrer" >Get Directions</a></p>
               </div>
               <div className="contact-info-item">
                 <h6>Phone:</h6>
