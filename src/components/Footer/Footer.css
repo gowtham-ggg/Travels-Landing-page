@@ -1,0 +1,263 @@
+/* Footer Styles */
+.footer-section {
+    background-color: #2c3e50; /* Dark background */
+    color: #f1c40f; /* Yellow text color */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-column {
+    margin-bottom: 50px;
+    flex: 1;
+    text-align: center; /* Centered text */
+}
+
+.footer-logo-container {
+    text-align: center;
+}
+
+.footer-logo-img {
+    width: 200px; /* Increased logo size */
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+
+.footer-logo-img:hover {
+    transform: scale(1.1); /* Hover effect on logo */
+}
+
+.footer-logo-text {
+    color: white;
+    font-size: 28px; /* Increased font size */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.footer-description {
+    color: #f1c40f;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.footer-social-icons {
+    margin-top: 30px;
+}
+
+.footer-social-icon {
+    font-size: 24px;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+}
+.fa-google {
+    color: orangered;
+}
+.fa-facebook {
+    color: blue;
+}
+.fa-twitter {
+    color: skyblue;
+}
+.fa-whatsapp {
+    color: green;
+}
+.footer-social-icon:hover {
+    transform: scale(1.1);
+}
+
+.footer-heading {
+    margin-bottom: 20px;
+    color: #f1c40f;
+    font-size: 20px;
+}
+
+.footer-contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-info-item {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact-info-item a {
+    text-decoration: none;
+    color: #fff; /* White text color */
+    background-color: #2ecc71; /* Green background for the button */
+    border: 2px solid #27ae60; /* Darker green border */
+    border-radius: 50px;
+    padding: 12px 30px; /* Adjust padding for a better button size */
+    font-size: 16px; /* Font size for the button text */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+    margin-top: 30px; /* Added top margin for spacing */
+}
+
+.contact-info-item a:hover {
+    background-color: #27ae60; /* Darker green on hover */
+    color: #fff; /* White text on hover */
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+    box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3); /* Add subtle shadow on hover */
+}
+
+/* Add smooth color transition to the text color */
+.contact-info-item a:focus {
+    outline: none;
+    border-color: #2ecc71; /* Keep the border color green when focused */
+    box-shadow: 0 0 5px 2px rgba(46, 204, 113, 0.5); /* Focus glow effect */
+}
+
+.contact-info-item h6 {
+    font-size: 18px;
+    color: #f1c40f;
+    margin-bottom: 10px;
+}
+
+.contact-info-item p {
+    font-size: 16px;
+    color: #f1c40f;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    border-top: 2px solid #f1c40f; /* Yellow border */
+    padding-top: 20px;
+    margin-top: 50px;
+}
+
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom-left {
+    text-align: left;
+}
+
+.footer-bottom-right {
+    text-align: right;
+}
+
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-menu ul li {
+    margin-left: 15px;
+}
+
+.footer-menu ul li a {
+    color: #f1c40f;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-menu ul li a:hover {
+    color: #ff6347; /* Hover effect color */
+}
+
+.footer-copy {
+    color: #f1c40f;
+    font-size: 14px;
+}
+
+.footer-copy a {
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+.footer-copy a:hover {
+    color: #ff6347;
+}
+
+/* Responsive Styles */
+
+/* For smaller screens (mobile devices) */
+@media (max-width: 767px) {
+    .footer-content {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align for mobile */
+    }
+    .footer-logo-img {
+        width: 150px; /* Smaller logo size for mobile */
+    }
+    .footer-logo-text {
+        font-size: 24px; /* Adjusted font size */
+    }
+    .footer-description {
+        font-size: 16px; /* Smaller text for description */
+    }
+    .footer-social-icons {
+        margin-top: 20px;
+    }
+    .footer-social-icon {
+        font-size: 20px; /* Smaller social icons */
+        margin-right: 10px;
+    }
+    .footer-contact-info {
+        flex-direction: column; /* Stack contact info items */
+        align-items: center; /* Center align for mobile */
+    }
+    .contact-info-item {
+        width: 80%; /* Adjust width for better mobile layout */
+        margin-bottom: 20px;
+        text-align: center; /* Center text */
+    }
+    .map{
+        margin-top: 20px;
+    }
+    .contact-info-item a {
+        width: 100%; /* Make the button full width on mobile */
+        margin-top: 20px; /* Adjust space between buttons */
+    }
+    .footer-menu ul {
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center; /* Center align */
+    }
+    .footer-menu ul li {
+        margin-left: 0;
+        margin-bottom: 10px; /* Space out menu items */
+    }
+    .footer-bottom-content {
+        flex-direction: column; /* Stack footer bottom content */
+        align-items: center; /* Center align footer bottom */
+    }
+    .footer-bottom-left, .footer-bottom-right {
+        text-align: center; /* Center align text */
+    }
+}
+
+/* For medium screens (tablets) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .footer-content {
+        flex-direction: row; /* Keep items in row for tablets */
+    }
+    .footer-contact-info {
+        flex-direction: row; /* Arrange contact info horizontally */
+    }
+    .contact-info-item {
+        width: 45%; /* Adjust width for better tablet layout */
+    }
+    .footer-social-icon {
+        font-size: 22px; /* Slightly larger social icons */
+    }
+}

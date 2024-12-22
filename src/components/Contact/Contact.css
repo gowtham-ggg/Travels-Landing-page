@@ -1,0 +1,149 @@
+/* Contact Section Styles */
+.contact-container {
+    text-align: center;
+    padding: 40px 20px;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box; /* Ensure padding does not cause overflow */
+}
+
+.contact-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.contact-highlight {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    font-weight: lighter;
+}
+
+.contact-description {
+    color: #6b7280;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 40px;
+    color: #4b5563;
+}
+
+.contact-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Added gap for spacing */
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Prevents overflow */
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.input-group input,
+.message-textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    margin-top: 8px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.message-textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-button {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.contact-button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .contact-container {
+        padding: 40px 10px; /* Less padding on smaller screens */
+    }
+
+    .contact-heading {
+        font-size: 1.6rem; /* Smaller heading font size for mobile */
+    }
+
+    .contact-description {
+        font-size: 14px; /* Slightly smaller description text */
+        margin-bottom: 20px; /* Reduce margin on smaller screens */
+    }
+
+    .contact-inputs {
+        flex-direction: column; /* Stack input fields vertically */
+        gap: 15px; /* Reduce gap between inputs */
+    }
+
+    .input-group {
+        width: 100%; /* Full width input fields */
+    }
+
+    .contact-button {
+        width: 100%; /* Full width button */
+        padding: 12px 0; /* Adjust button padding */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .input-group {
+        width: 48%; /* Two columns layout for medium screens */
+    }
+
+    .contact-container {
+        padding: 50px 20px; /* More padding for medium screens */
+    }
+
+    .contact-button {
+        width: auto; /* Button returns to its default size */
+        padding: 12px 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .contact-container {
+        padding: 60px 20px; /* More padding on large screens */
+        width: 120vw;
+    }
+
+    .contact-inputs {
+        justify-content: space-between; /* Keep inputs aligned */
+    }
+
+    .input-group {
+        width: 48%; /* Two columns layout for larger screens */
+    }
+
+    .contact-button {
+        width: auto; /* Default button size */
+        padding: 12px 30px;
+    }
+}

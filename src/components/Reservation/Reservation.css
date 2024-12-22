@@ -1,0 +1,98 @@
+/* General section styles */
+.reservation-area {
+    padding: 60px 0;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
+    position: relative;
+  }
+  
+  .reservation-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .reservation-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .reservation-col {
+    flex: 1;
+    padding: 20px;
+    color: #fff; /* White text for contrast */
+    text-align: center;
+  }
+  
+  /* Image container with wave movement */
+  .image-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  
+  .reservation-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    animation: waveMovement 3s infinite ease-in-out;
+  }
+  
+  /* Wave animation */
+  @keyframes waveMovement {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.05) rotate(3deg);
+    }
+    50% {
+      transform: scale(1) rotate(-3deg);
+    }
+    75% {
+      transform: scale(1.05) rotate(3deg);
+    }
+    100% {
+      transform: scale(1) rotate(0deg);
+    }
+  }
+  
+  /* Hover effect for zooming */
+  .reservation-image:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Heading and text styles */
+  .reservation-title {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #fff; /* White text for contrast */
+  }
+  
+  .reservation-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ccc; /* Light grey for contrast */
+  }
+  
+  /* Button styling */
+  .reservation-button .btn-book-now {
+    display: inline-block;
+    background-color: #ffb400;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reservation-button .btn-book-now:hover {
+    background-color: #e59400;
+  }
+  
